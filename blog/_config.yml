@@ -1,0 +1,86 @@
+# Site Settings
+title: "mTNT-aios"
+name: "mTNT OS - AI操作系统"
+description: "mini / my Touch and Talk Operating System - 基于LLM技术构建的AI操作系统"
+url: "https://manwjh.github.io/mTNT-aios"
+baseurl: "/mTNT-aios"
+
+# 作者信息
+author:
+  name: "深圳王哥 & AI"
+  bio: "AI操作系统开发者"
+
+# 社交媒体链接
+social:
+  - label: "GitHub"
+    icon: "fab fa-fw fa-github"
+    url: "https://github.com/manwjh/mTNT_os"
+
+# 远程主题
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+# 插件
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-remote-theme
+
+# 分页设置
+paginate: 5
+paginate_path: "/posts/page:num/"
+
+# 排除文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - .git/
+  - .gitignore
+  - README.md
+  - LICENSE
+  - ../os_core/
+  - ../apps/
+  - ../docker/
+  - ../scripts/
+  - ../docs/
+  - ../logs/
+  - ../cache/
+  - ../data/
+  - ../build/
+  - ../.venv/
+  - ../linux_customization/
+
+# 包含文件
+include:
+  - _posts
+  - assets
+
+# 默认设置
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+
+# 搜索
+search: true
+
+# 侧边栏
+sidebar:
+  nav: "l_main"
+
+# 头部
+masthead_title: "mTNT OS"
+
+# 代码高亮
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
